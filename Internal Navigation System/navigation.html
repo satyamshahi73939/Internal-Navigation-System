@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal Navigation System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Internal Navigation System</h1>
+            <input type="text" id="search" placeholder="Search for a room or department...">
+        </header>
+        
+        <div class="map-container">
+            <img src="images/floor-plan.jpg" alt="Map" id="map" usemap="#image-map">
+            <!-- Define clickable areas in the map using area tags -->
+            <map name="image-map">
+                <area target="" alt="Room 101" title="Room 101" href="#" coords="50,50,150,150" shape="rect" data-info="Room 101: Conference Room">
+                <area target="" alt="Room 102" title="Room 102" href="#" coords="160,50,260,150" shape="rect" data-info="Room 102: IT Department">
+                <!-- Add more areas as needed -->
+            </map>
+        </div>
+        
+        <div id="info-box">
+            <h2>Room Information</h2>
+            <p id="room-info">Click on a room to see details.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
